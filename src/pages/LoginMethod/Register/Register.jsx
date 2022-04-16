@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import SocialMethod from "../SocialMethod/SocialMethod";
 import './Register.css'
@@ -44,6 +44,11 @@ const Register = () => {
         {/* <input type="password" placeholder="type your confirmation password" /> */}
         <input type="submit" value="Register" />
       </form>
+      <div>
+      <div className='pt-2 font-medium text-center'>
+      Already have an account ?   <Link to='/login' className='border-b'>please login </Link>
+                    </div>
+      </div>
       <SocialMethod></SocialMethod>
     </div>
   );

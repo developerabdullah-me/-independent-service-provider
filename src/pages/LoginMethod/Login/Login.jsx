@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialMethod from '../SocialMethod/SocialMethod';
 
@@ -33,6 +33,11 @@ const Login = () => {
         <input ref={passwordRef} type="password" name="password" placeholder="type your password" required/><br />
         <input  type="submit" value="Login" />
       </form>
+      <div>
+      <div className='pt-2 font-medium text-center'>
+        please first register?<Link to='/register' className='border-b'>Register</Link>
+                    </div>
+      </div>
             <SocialMethod></SocialMethod>
         </div>
     );
