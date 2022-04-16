@@ -3,6 +3,7 @@ import './App.css';
 import About from './pages/About/About';
 import Blogs from './pages/Blogs/Blogs';
 import CheckOut from './pages/CheckOut/CheckOut';
+import Home from './pages/HomeMethod/Home/Home';
 import Login from './pages/LoginMethod/Login/Login';
 import Register from './pages/LoginMethod/Register/Register';
 import Services from './pages/Services/Services';
@@ -12,6 +13,7 @@ function App() {
     <div className="">
       <Header></Header>
      <Routes>
+       <Route path='/' element={<Home></Home>}></Route>
        <Route path="/services" element={<Services></Services>}></Route>
       <Route path='/checkout' element={<CheckOut></CheckOut>}></Route>
       <Route path='/blogs' element={<Blogs></Blogs>}></Route>
