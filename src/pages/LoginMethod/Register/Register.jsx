@@ -38,17 +38,18 @@ const Register = () => {
     <div className="">
        
       <h1>please register</h1>
-      <form onSubmit={handleRegister}>
-        <input type="name" placeholder="Name" />
-        <input type="email" name="email" placeholder="type your email" required/><br />
-        <input type="password" name="password" placeholder="type your password" required/><br />
-        {/* <input type="password" placeholder="type your confirmation password" /> */}
-        <input type="submit" value="Register" />
-      </form>
       <div>
-      <div className='pt-2 font-medium text-center'>
-      Already have an account ?   <Link to='/login' className='border-b'>please login </Link>
-                    </div>
+      <form onSubmit={handleRegister}>
+        <input className="block bg-slate-100 my-3 py-2 px-2 w-80 pl-4 outline-none" type="name" placeholder="Name" />
+        <input className="block bg-slate-100 my-3 py-2 px-2 w-80 pl-4 outline-none" type="email" name="email" placeholder="type your email" required/>
+        <input className="block bg-slate-100 my-3 py-2 px-2 w-80 pl-4 outline-none" type="password" name="password" placeholder="type your password" required/>
+        <input className="block bg-slate-100 my-3 py-2 px-2 w-80 pl-4 outline-none" type="password" name="password" placeholder="type your confirm password" required/>
+        <input className='btn w-80'  type="submit" value="Register" />
+      </form>
+      </div>
+
+      <div className='pt-2 font-medium '>
+     <p> Already have an account ?   <Link to='/login' className='border-b'>please login </Link></p>
       </div>
       <SocialMethod></SocialMethod>
     </div>
