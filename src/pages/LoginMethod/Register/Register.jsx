@@ -43,13 +43,14 @@ const Register = () => {
             <div className ='text-center'>
             <SocialMethod></SocialMethod>
             </div>
-        <div>
-          <div className="">
+            
+         <div>
+          
            <div className="flex items-center justify-center">
            <div className="h-1 bg-slate-700 w-28 rounded "></div>
             <p className="px-2">or</p>
             <div className="h-1 bg-slate-700 w-28 rounded "></div>
-           </div>
+          
           </div>
         </div>
       <form onSubmit={handleRegister}>
