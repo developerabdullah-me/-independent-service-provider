@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialMethod from '../SocialMethod/SocialMethod';
@@ -15,6 +15,10 @@ const Login = () => {
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
+
+      const [sendPasswordResetEmail, sending, error2] = useSendPasswordResetEmail(
+        auth
+      );
       if (user){
         navigate('/about')
     }
@@ -24,6 +28,12 @@ const Login = () => {
         const password=passwordRef.current.value;
      signInWithEmailAndPassword(email,password);
       };
+
+      const handelPasswordReset=async(event)=>{
+        const email=emailRef.current.value;
+        await sendPasswordResetEmail(email);
+        alert('Sent email');
+       }
     return (
         <div>
             <h1>please Login</h1>
@@ -33,6 +43,9 @@ const Login = () => {
         <input ref={passwordRef} type="password" name="password" placeholder="type your password" required/><br />
         <input  type="submit" value="Login" />
       </form>
+      <div className="">
+   <button onClick={handelPasswordReset}>reset password</button>
+      </div>
       <div>
       <div className='pt-2 font-medium text-center'>
         please first register?<Link to='/register' className='border-b'>Register</Link>

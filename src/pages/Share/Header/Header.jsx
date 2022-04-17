@@ -14,6 +14,7 @@ const handelSignOut=()=>{
         <div className="flex  items-center justify-center justify-between mx-10">
             <h1  className="text-2xl font-bold border-l-2 border-b-2  border-gray-300">web site build</h1>
         <nav className="flex ">
+        <CoustomActiveLink className="ml-5 hover:text-red-500 font-bold" to='/home'>Home</CoustomActiveLink>
         <CoustomActiveLink className="ml-5 hover:text-red-500 font-bold" to='/services'>Services</CoustomActiveLink>
         <CoustomActiveLink className="ml-5 hover:text-red-500 font-bold" to='/CheckOut'>CheckOut</CoustomActiveLink>
         <CoustomActiveLink className="ml-5 hover:text-red-500 font-bold" to='/about'>About</CoustomActiveLink>
