@@ -1,6 +1,8 @@
 import React from 'react';
 import auth from '../../../firebase.init';
 import { useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Loding from '../../Share/Loding/Loding';
 import google from '../SocialMethod/sosial-logo/google-logo.png'
 import github from '../SocialMethod/sosial-logo/github-log.png'
@@ -16,15 +18,15 @@ const SocialMethod = () => {
    }
     let elementErrors ;
     if (error || error1  || error3) {
-        return (
-            elementErrors= <div>
-            <p>Error:  {error?.message} {error1?.message}  {error3?.message}</p>
-          </div>
-        );
+        toast.error(<> {error?.message} {error1?.message}  {error3?.message}</>)
+           
       }
+     
     return (
         <div>
-            {elementErrors}
+            <ToastContainer />
+         
+          
             <button className=" m-4" stroke="currentColor" onClick={() => signInWithGoogle()}> <img  className="bg-white rounded-full p-1 " src={google} alt="" /> </button>
             <button className=" m-4" stroke="currentColor" onClick={() => signInWithFacebook()}><img className="bg-white rounded-full p-1 " src={facebook} alt="" /></button>
             <button className=" m-4" stroke="currentColor" onClick={() => signInWithGithub()}> <img  className="bg-white rounded-full p-1 " src={github} alt="" /> </button>

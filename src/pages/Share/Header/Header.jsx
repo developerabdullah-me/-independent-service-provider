@@ -24,7 +24,7 @@ const Header = () => {
         </CoustomActiveLink>
         <CoustomActiveLink
           className="ml-5 hover:text-red-500 font-bold"
-          to="/services"
+          to=""  href="#services"
         >
           Services
         </CoustomActiveLink>
@@ -66,6 +66,7 @@ const Header = () => {
           </CoustomActiveLink>
         )}
       </nav>
+     
     </div>
   );
 };
