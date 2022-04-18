@@ -14,7 +14,7 @@ const Service = (props) => {
             <img className='h-52 mx-auto' src={img} alt="" />
            <div className="">
            <h1 className='text-white'>Service: {name}</h1>
-            <p>${price}</p>
+            <p>price:${price}</p>
             <p className=''>{description}</p>
             <button className='btn' onClick={()=>handelprams(id)}>go to details</button>
            </div>

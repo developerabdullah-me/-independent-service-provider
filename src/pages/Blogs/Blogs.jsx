@@ -4,7 +4,7 @@ const Blogs = () => {
   return (
     <div className="md:mx-36 sm:mx-4">
       <div className="">
-        <h1 className="text-center text-2xl mt-5  pb-3">
+        <h1 className="text-center text-2xl mt-5  pb-3 text-white">
           Why are you using firebase? What other options do you have to
           implement authentication?
         </h1>
@@ -18,7 +18,7 @@ const Blogs = () => {
       </div>
 
       <div>
-        <h1  className="text-center text-2xl mt-5  pb-3">
+        <h1  className="text-center text-2xl mt-5  pb-3 text-white">
           What other services does firebase provide other than authentication ?
         </h1>
         <p className='text-center mx-auto'>
@@ -27,7 +27,7 @@ const Blogs = () => {
         </p>
       </div>
       <div>
-          <h1  className="text-center text-2xl mt-5  pb-3">
+          <h1  className="text-center text-2xl mt-5  pb-3 text-white">
           Difference between authentication and authorization.
           </h1>
         <p className='text-center mx-auto'>
