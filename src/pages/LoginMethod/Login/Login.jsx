@@ -3,7 +3,7 @@ import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
 } from "react-firebase-hooks/auth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate,useLocation } from "react-router-dom";
 import auth from "../../../firebase.init";
 import SocialMethod from "../SocialMethod/SocialMethod";
 
@@ -17,8 +17,13 @@ const Login = () => {
 
   const [sendPasswordResetEmail, sending, error2] =
     useSendPasswordResetEmail(auth);
+  // if (user) {
+  //   navigate("/about");
+  // }
+  const location=useLocation();
+  let from = location.state?.from?.pathname || "/";
   if (user) {
-    navigate("/about");
+    navigate(from, { replace: true });
   }
   const handelLogin = (event) => {
     event.preventDefault();

@@ -1,33 +1,41 @@
 import { signOut } from "firebase/auth";
-import React from "react";
+import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../../firebase.init";
 import CoustomActiveLink from "../CoustomActiveLink/CoustomActiveLink";
 
 const Header = () => {
+
   const [user] = useAuthState(auth);
   const handelSignOut = () => {
     signOut(auth);
   };
+  
   return (
-    <div className="flex  items-center justify-between mx-10 py-5">
-      <h1 className="text-2xl font-bold border-l-2 border-b-2  border-gray-300">
+    <div className="flex  md:items-center justify-between mx-10 py-5">
+      <h1 className="text-2xl font-bold  ">
         web site build
       </h1>
-      <nav className="flex items-center">
+      <nav className="md:flex items-center">
+
+        {/* ham */}
         <CoustomActiveLink
           className="ml-5 hover:text-red-500 font-bold"
           to="/home"
         >
           Home
         </CoustomActiveLink>
-        <CoustomActiveLink
+       
+
+       <CoustomActiveLink
           className="ml-5 hover:text-red-500 font-bold"
-          to=""  href="#services"
+          to=""href="#services"
         >
+          
           Services
         </CoustomActiveLink>
+      
         <CoustomActiveLink
           className="ml-5 hover:text-red-500 font-bold"
           to="/CheckOut"

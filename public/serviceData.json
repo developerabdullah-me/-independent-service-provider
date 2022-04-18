@@ -1,79 +1,47 @@
 [
   {
-    "id": "625bfbfd7044ec07eed2143c",
-    "name": "big project",
+    "id": "625d3b96ba5f37a85c90a2f7",
+    "name": "Web Design",
     "index": 0,
-    "img": "",
-    "seevice": "web site"
+    "img": "onl-ui.png",
+    "price": "120",
+    "seevice": "web site",
+    "description":"I provide responsive Web-Design. I use html vanilla css"
   },
   {
-    "id": "625bfbfd4b412cec63d72653",
-    "name": "big project",
+    "id": "625d3b96730ed35e47d05c0d",
+    "name": "Web Design",
     "index": 1,
-    "img": "",
-    "seevice": "web site"
+    "img": "onl-ui2.png",
+    "price": "130",
+    "seevice": "web site",
+    "description":"I provide responsive Web-Design. I use html vanilla css Bootstraps"
   },
   {
-    "id": "625bfbfdfa159b2c0e373170",
-    "name": "big project",
+    "id": "625d3b960d9c1679252d269a",
+    "name": "Web Design",
     "index": 2,
-    "img": "",
-    "seevice": "web site"
+    "img": "onl-ui3.png",
+    "price": "140",
+    "seevice": "web site",
+    "description":"I provide responsive Web-Design. I use html vanilla css Tailwind"
   },
   {
-    "id": "625bfbfd130028b924c8e61f",
-    "name": "big project",
+    "id": "625d3b969e90cb69a7c6122a",
+    "name": "Web Design",
     "index": 3,
-    "img": "",
-    "seevice": "web site"
+    "img": "onl-ui4.png",
+    "price": "200",
+    "seevice": "web site",
+    "description":"I provide responsive Web-Design. I use html vanilla css Bootstraps Tailwind Javascript"
   },
   {
-    "id": "625bfbfd90dbcef9ffeede6a",
-    "name": "big project",
+    "id": "625d3b961aa21164915a265d",
+    "name": "Web Design",
     "index": 4,
-    "img": "",
-    "seevice": "web site"
-  },
-  {
-    "id": "625bfbfde1c344994e1bc825",
-    "name": "big project",
-    "index": 5,
-    "img": "",
-    "seevice": "web site"
-  },
-  {
-    "id": "625bfbfdd0877b26db3abd12",
-    "name": "big project",
-    "index": 6,
-    "img": "",
-    "seevice": "web site"
-  },
-  {
-    "id": "625bfbfd93c37f05bb988a20",
-    "name": "big project",
-    "index": 7,
-    "img": "",
-    "seevice": "web site"
-  },
-  {
-    "id": "625bfbfd6981ae240eb8e6b3",
-    "name": "big project",
-    "index": 8,
-    "img": "",
-    "seevice": "web site"
-  },
-  {
-    "id": "625bfbfdb0cbcf79e367057a",
-    "name": "big project",
-    "index": 9,
-    "img": "",
-    "seevice": "web site"
-  },
-  {
-    "id": "625bfbfdb63abf9a82ea43e3",
-    "name": "big project",
-    "index": 10,
-    "img": "",
-    "seevice": "web site"
+    "img": "onl-ui5.png",
+    "price": "350",
+    "seevice": "web site",
+    "description":"I provide responsive Web-Design. I use html vanilla css Bootstraps Tailwind Javascript React js RectRouter"
   }
 ]
